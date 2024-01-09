@@ -22,8 +22,11 @@
         <ul v-if="todos.length > 0">
             <li v-for="(elem, i) in todos">
                 {{elem}}
+            
+                <button @click="removetodo(i)" Sclass="mybutton">x</button>
+
             </li>
-            <button class="mybutton">x</button>
+            
           
         </ul>
 
